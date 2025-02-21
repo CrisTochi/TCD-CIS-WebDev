@@ -59,12 +59,36 @@ html * {
 /*--------------------------------------------------------------
 # Navigation
 --------------------------------------------------------------*/
-
-
+nav ul{
+	list-style-type: square;
+}
+nav ul li{
+	color: blue;
+}
+nav ul li::marker{
+	color: red;
+}
+nav a{
+	text-decoration: none;
+	color: green;
+}
 /*--------------------------------------------------------------
 # Header Area
 --------------------------------------------------------------*/
-
+header{
+	background-color: teal;
+	padding: 10px;
+}
+main{
+	width: calc(70% - 1px);
+	float: left;
+	padding: 1rem;
+	border-right: 1px solid red;
+}
+aside{
+	width: 30%;
+	float: right;
+}
 
 /*--------------------------------------------------------------
 # Content Area
@@ -74,7 +98,12 @@ html * {
 /*--------------------------------------------------------------
 # Footer Area
 --------------------------------------------------------------*/
-
+footer{
+	clear: both;
+	background-color: teal;
+	text-align: center;
+	padding: 10px;
+}
 
 /*--------------------------------------------------------------
 # Reusable Classes
