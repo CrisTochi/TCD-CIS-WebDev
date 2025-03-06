@@ -3,22 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Youre Page Title</title>
-    <link rel="styleshet" href="styles.css"> <!-- Link to your CSS file -->
+    <title>Responsive Image Example</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Welcome to Your Website</h1>
+        <h1>Responsive Image Example</h1>
     </header>
     
     <main>
-        <p>This is a sample paragraph. You can add your content here.</p>
+        <figure>
+            <picture>
+                <!-- Small preferred image -->
+                <source srcset="images/small-image.webp" type="image/webp" media="(max-width: 600px)">
+                <!-- Small fallback image -->
+                <source srcset="images/small-image.jpg" type="image/jpeg" media="(max-width: 600px)">
+                
+                <!-- Medium preferred image -->
+                <source srcset="images/medium-image.webp" type="image/webp" media="(max-width: 900px)">
+                <!-- Medium fallback image -->
+                <source srcset="images/medium-image.jpg" type="image/jpeg" media="(max-width: 900px)">
+                
+                <!-- Large preferred image -->
+                <source srcset="images/large-image.webp" type="image/webp">
+                <!-- Large fallback image -->
+                <source srcset="images/large-image.jpg" type="image/jpeg">
+                
+                <!-- Fallback image -->
+                <img src="images/fallback-image.jpg" alt="A descriptive alt text for the image">
+            </picture>
+            <figcaption>This is a caption for the image.</figcaption>
+        </figure>
     </main>
-    
+
     <footer>
-        <p>&copy; 2023 Your Name. All rights reserved.</p>
+        <p>&copy; 2023 Your Name</p>
     </footer>
-    
-    <script src="script.js"></script> <!-- Link to your JavaScript file -->
 </body>
 </html>
